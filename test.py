@@ -51,6 +51,6 @@ def run_train(data_path: str):
     
 
 if __name__ == "__main__":
-    mlflow.set_tracking_uri("sqlite:///mlflow.db")
+    mlflow.set_tracking_uri("http://localhost:5000/")
     mlflow.set_experiment("100-sport-cls")
     run_train()
